@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Copyright (c) 2012 jnaO
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -19,4 +21,20 @@
 # THE SOFTWARE.
 #
 
-cp $1{,$(date +[%d-%m-%y][%H:%M]).bak}
+if [ -e $1 ]
+  then
+    cp $1{,$(date +[%d-%m-%y][%H:%M]).bak}
+    echo
+    echo [---=== Sucess! ===---]
+    echo $1 Backed up
+    echo
+    echo New file:
+    echo $1$(date +[%d-%m-%y][%H:%M]).bak
+    echo
+  else
+    echo
+    echo [---=== Error! ===---]
+    echo $1
+    echo - file does not exist
+    echo
+fi
