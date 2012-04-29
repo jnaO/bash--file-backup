@@ -2,10 +2,12 @@
 
 # 2012 by jnaO
 #
-# Permission is hereby granted, free of charge, yada yada yada...
+# Permission is hereby granted, free of charge and so on...
 # Use as you please. If you break something using tis program, or
 # if anyone else breaks something for you because of this program
-# dont blame me. Intension is to help you, not to harm you.
+# don't blame me.
+#
+# Intension is to help you, not to harm you.
 #
 # Source is found @ https://github.com/jnaO/file_backup
 #

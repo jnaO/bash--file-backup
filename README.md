@@ -15,6 +15,6 @@ Create a symlink to a folder on your path (run `echo $PATH` in terminal to se wh
 
           ln -s PATH/TO/YOUR/FOLDER/backup.sh backup
 
-FILES
+USAGE
 -----
-* `backup.sh` - takes the argument passed into the program, and copies it suffixing the date and `.bak`
+* `backup.sh` - takes one argument passed into the program - `FILE` -, and copies it suffixing the date and `.bak`
