@@ -12,7 +12,7 @@
 # Source is found @ https://github.com/jnaO/file_backup
 #
 
-if [ -e $1 ]
+if [ -e $1 ] && [ -f $1 ]
   then
     cp $1{,$(date +.[%d-%m-%y][%H:%M]).bak}
     echo
@@ -20,6 +20,16 @@ if [ -e $1 ]
     echo $1 Backed up
     echo
     echo New file:
+    echo $1$(date +.[%d-%m-%y][%H:%M]).bak
+    echo
+elif [ -e $1 ] && [ -d $1 ];
+  then
+    cp -r $1{,$(date +.[%d-%m-%y][%H:%M]).bak}
+    echo
+    echo [---=== Sucess! ===---]
+    echo $1 Backed up
+    echo
+    echo New folder:
     echo $1$(date +.[%d-%m-%y][%H:%M]).bak
     echo
   else
