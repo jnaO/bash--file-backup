@@ -17,5 +17,7 @@ Create a symlink to a folder on your path (run `echo $PATH` in terminal to find 
 USAGE
 -----
 * Add program to a folder on your path `ln -s PATH/TO/YOUR/CLOE_FOLDER/backup.sh PATH_FOLDER/backup`
-* From anywhere, run `backup myFile.rb`
+* From anywhere, run `backup myFile.rb` and this will create a file `myFile.rb.[29-04-12][14:20].bak`
 * `backup.sh` - takes one argument passed into the program (a file), and copies it suffixing the date, hour, minutes and `.bak`
+
+
