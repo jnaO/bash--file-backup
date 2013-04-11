@@ -14,7 +14,7 @@
 
 if [ -e $1 ] && [ -f $1 ]
   then
-    cp $1{,$(date +.[%d-%m-%y][%H:%M]).bak}
+    sudo cp $1{,$(date +.[%d-%m-%y][%H:%M]).bak}
     echo
     echo [---=== Sucess! ===---]
     echo $1 Backed up
@@ -24,7 +24,7 @@ if [ -e $1 ] && [ -f $1 ]
     echo
 elif [ -e $1 ] && [ -d $1 ];
   then
-    cp -r $1{,$(date +.[%d-%m-%y][%H:%M]).bak}
+    sudo cp -r $1{,$(date +.[%d-%m-%y][%H:%M]).bak}
     echo
     echo [---=== Sucess! ===---]
     echo $1 Backed up
